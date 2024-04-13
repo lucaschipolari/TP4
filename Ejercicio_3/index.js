@@ -1,6 +1,6 @@
 //3-Escribe una clase que permita crear distintos objetos “rectángulos”, con las propiedades de alto y ancho, mas los métodos necesarios para modificar y mostrar sus propiedades, calcular el perímetro y el área
 
-class rectangulo {
+class Rectangulo {
   constructor(alto, ancho) {
     this.alto = alto;
     this.ancho = ancho;
@@ -17,7 +17,7 @@ class rectangulo {
   }
 }
 
-const cuadrado = new rectangulo(5, 5);
+const cuadrado = new Rectangulo(5, 5);
 
 console.log('El perimetro es: '+cuadrado.calcularPerimetro());
 console.log('El area del rectangulo es: '+cuadrado.calcularArea());
