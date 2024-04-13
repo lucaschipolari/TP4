@@ -30,6 +30,9 @@ const cuenta = {
 cuenta.informar();
 
 cuenta.ingresar(100);
+
+cuenta.informar();
+
 cuenta.extraer(50);
 
 cuenta.informar();
