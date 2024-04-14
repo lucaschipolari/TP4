@@ -95,6 +95,11 @@ do{
     7. Verificar cuántos contactos están disponibles
     8. Salir del sistema
     `);
+    if (opcion === null) {
+        alert("Ha salido del sistema correctamente");
+        break;
+    }
+
 
 switch (opcion) {
     case '1':
@@ -150,4 +155,4 @@ switch (opcion) {
     default:
         break;
 }
-}while(opcion!=='8' || opcion===null);
+}while(opcion!=='8');
