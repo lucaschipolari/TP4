@@ -57,12 +57,8 @@ switch (opcion) {
         }
         break;
     case '3':
-        const contactos=agenda.listarContactos();
-        let contactoString = '';
-        contactos.forEach(e => {
-            contactoString += `Nombre: ${e.nombre}, Teléfono: ${e.telefono}\n`;
-        });
-        alert(contactoString);
+        let contac= agenda.listarContactos();
+        alert(contac);
         break;
     case '4':
         let nombreContacto = prompt('Ingrese el nombre del contacto');

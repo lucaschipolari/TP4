@@ -22,10 +22,14 @@ export class Agenda{
         });*/
     }
     listarContactos(){
-        return this.contactos;3
+        let contactoString = '';
+        this.contactos.forEach(e => {
+            contactoString += `Nombre: ${e.nombre}, Teléfono: ${e.telefono}\n`;
+        });
+       return contactoString;
     }
     buscarContacto(nombre){
-        this.contactos.forEach(e =>{
+        this.contactos.find(e =>{
             if(e.nombre === nombre){
                alert(`El telefono del contacto es: ${e.telefono}`);
             }   
@@ -39,7 +43,7 @@ export class Agenda{
         }
     }
     huecosLibres(){
-        return 10-this.contactos.length;
+        return this.tamaño-this.contactos.length;
     }
     eliminarContacto(contacto){ 
         this.contactos.forEach(e=> {
